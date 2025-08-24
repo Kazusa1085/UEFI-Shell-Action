@@ -155,7 +155,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ steps.tag_info.outputs.new_tag }}
-        name: Release ${{ steps.tag_info.outputs.new_tag }}
+        name: ${{ steps.tag_info.outputs.new_tag }}
         body: |
           ## 更新内容
           
